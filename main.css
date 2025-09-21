@@ -1,0 +1,162 @@
+body {
+	padding: 10px;
+	font-family: 'Montserrat', sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	/* 字体最小14px，最大18px，首选1.5vw */
+	font-size: clamp(14px, 1.5vw, 18px);
+}
+.page-container {
+	display: grid;
+	grid-template-columns: 20% auto;
+	grid-template-rows: auto auto auto;
+	height: 100vh;
+}
+.header {
+	grid-column: 1/3;
+	display: flex;
+	justify-content: space-between;
+}
+.aside {
+	grid-column: 1;
+	grid-row: 2/3;
+}
+.main {
+	grid-column: 2;
+	grid-row: 2;
+}
+.footer {
+	grid-column: 2;
+	grid-row: 3;
+	text-align: center;
+}
+.title {
+	flex-grow: 1;
+}
+.nav {
+	flex-grow: 3;
+}
+
+header ul {
+	display: flex;
+	justify-content: space-evenly;
+	list-style: none;
+}
+aside ul {
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: column;
+	list-style: none;
+	margin-left: 0;
+}
+aside li{
+	margin-left:0px;
+	padding:5%;
+}
+#Profile,
+#Project {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	gap: 10%;
+}
+#Project1,
+#Project2 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+#Project h3{
+	width: 15%;
+}
+#Project img {
+	border: 3px solid rgb(180, 180, 180);
+	border-radius: 8%;
+	width: 50%;
+	height: 50%;
+	transform: rotate3d(1, 1, 0, 30deg);
+	transition: transform 0.5s ease-in, box-shadow 0.5s ease-in;
+	box-shadow: -20px 20px 0 rgb(177, 177, 177);
+}
+header h1,header li {
+	font-size: 2vw;
+}
+#Project img:hover {
+	transform: rotate3d(0, 0, 0, 0deg) scale(1.01);
+	box-shadow: -5px 5px 0 rgb(177, 177, 177);
+}
+figcaption {
+	text-align: center;
+	margin-top: 10%;
+}
+a {
+	color: rgb(85, 213, 255);
+	transition: color 0.3s ease, transform 0.5s ease;
+	text-decoration: none;
+}
+a:hover {
+	color: blue;
+}
+.Github,
+.Email {
+	content: '';
+	display: inline-block;
+	width: 2vw;
+	height: 2vh;
+	background-size: contain;
+	vertical-align: middle;
+}
+.Email {
+	background-image: url(/Blog/image/email.png);
+}
+.Github {
+	background-image: url(/Blog/image/github-mark.png);
+}
+@keyframes catMove1 {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(50px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+@keyframes catMove2 {
+	0% {
+		transform: translateX(0);
+	}
+	50% {
+		transform: translateX(-25px);
+	}
+	100% {
+		transform: translateX(-50px);
+	}
+}
+.cat {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 50px;
+	height: 50px;
+	animation: catMove1 3s ease infinite alternate;
+}
+.moveCat {
+	position: absolute;
+	top: 10%;
+	right: 10%;
+	width: 50px;
+	height: 50px;
+}
+.moveCat:hover {
+	animation: catMove2 3s linear infinite normal;
+}
+figure{
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
