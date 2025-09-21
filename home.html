@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
-  <title>My Blog</title>
+  <title>JinLing - Frontend Developer</title>
 </head>
 
 <body class="page-container">
@@ -20,63 +20,92 @@
     <h1>JinLing</h1>
     <nav class="nav">
       <ul>
-        <li><a href="#Profile">Profile</a></li>
-        <li><a href="#Project">Project</a></li>
-        <li><a href="#Education">Education</a></li>
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#education">Education</a></li>
       </ul>
     </nav>
   </header>
 
   <main class="main">
-    <img class="cat" src="./image/cat.png" alt="">
-    <img class="moveCat" src="./image/moveCat.png" alt="" draggable="true">
-    <section id="Profile">
-      <h2 class="title">Profile</h2>
+    <section id="profile" class="profile">
+      <h2 class="section-title">Profile</h2>
       <p>I am JinLing. a frontend developer</p>
 
-      <h3>Skills</h3>
+      <h3 class="subsection-title">Skills</h3>
+      <ul class="skills-container">
+        <li class="skill-tag">HTML</li>
+        <li class="skill-tag">CSS</li>
+        <li class="skill-tag">JavaScript</li>
+        <li class="skill-tag">Vue</li>
+        <li class="skill-tag">响应式设计</li>
+      </ul>
+    </section>
 
+    <section id="projects" class="section">
+      <h2 class="section-title">Project</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3 class="project-title">Vue Expense Tracker</h3>
+          <figure class="project-figure">
+            <img class="project-image" src="./image/Vue_ExpenseTracker.png" alt="Vue记账应用">
+            <figcaption class="project-caption">A personal finance management application developed with Vue.js.
+            </figcaption>
+          </figure>
+          <div class="project-description">
+            <p>
+              This is a Vue 3-based bookkeeping application that allows users to record their income and expenses, view
+              their bill details, and analyze their financial situation.
+            </p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3 class="project-title">DebugDive</h3>
+          <figure>
+            <img src="./image/DebugDiva.png" alt="Project2 Image">
+            <figcaption class="project-caption">An AI conversational assistant developed with Vue.js.</figcaption>
+          </figure>
+          <div class="project-description">
+            <p>
+              A multimodal dialog component supporting text, image, and PDF inputs with streaming responses,
+              integrated with the Coze API for large language model interactions.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
-    <section id="Project">
-      <h2 class="title">Project</h2>
-      <section id="Project1">
-        <h3>Project 1 </h3>
-        <figure>
-          <img class="projectImage" src="./image/Vue_ExpenseTracker.png" alt="Project1 Image">
-          <figcaption>记账应用</figcaption>
-        </figure>
-      </section>
-      <section id="Project2">
-        <h3>Project 2 </h3>
-        <figure>
-          <img src="./image/DebugDiva.png" alt="Project2 Image">
-          <figcaption>ai对话</figcaption>
-        </figure>
-      </section>
-    </section>
-    <section id="Education">
-      <h2 class="title">Education</h2>
+
+    <section id="education">
+      <h2 class="section-title">Education</h2>
+      <div class="education-item">
+        <h3 class="education-title">Intelligent Science and Technology</h3>
+        <p class="education-period">September 2023 – June 2027</p>
+        <p>Focused on Web Front-End Development</p>
+      </div>
     </section>
   </main>
-  <aside class="aside">
-    <h3>Help</h3>
-    <ul>
-      <li>
-        <a class="Github" href="https://github.com/JINLING1">GitHub</a>
+
+  <aside class="sidebar">
+    <h3 class="sidebar-title">Contact Me</h3>
+    <ul class="contact-list">
+      <li class="contact-item">
+        <a class="contact-link github-link" href="https://github.com/JINLING1" target="_blank">GitHub</a>
       </li>
-      <li>
-        <a class="Email" href="mailto:JinLing.shot@gmail.com">Contact
-        </a>
+      <li class="contact-item">
+        <a class="contact-link email-link" href="mailto:JinLing.shot@gmail.com">Email</a>
       </li>
     </ul>
-
   </aside>
 
   <footer class="footer">
-    <p>&copy; 2025 My Blog. All rights reserved.</p>
+    <p>&copy; 2025 JinLing. All rights reserved.</p>
     <p>Contact: JinLing.shot@gmail.com</p>
   </footer>
-
+  <div class="decorative-elements">
+    <img class="cat-icon" src="./image/cat.png" alt="cat-icon">
+    <img class="move-cat-icon" src="./image/moveCat.png" alt="move-cat-icon">
+  </div>
 </body>
 
 </html>
