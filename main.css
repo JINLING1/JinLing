@@ -33,29 +33,34 @@ body {
 .header {
 	grid-area: header;
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	align-items: center;
+	gap:20%;
 	margin: 0px;
 	padding: 20px;
-	background: linear-gradient(135deg, #8599c5 0%, #58718f 100%);
+	background: linear-gradient(135deg, #dcbfff 0%, #8d36ff55 100%);
 	color: white;
 	border-radius: 12px;
 	box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+	position:sticky;
+	top:20px;
+	z-index:1;
 }
 
 .header h1 {
-	font-size: clamp(1.8rem, 4vw, 3rem);
-	font-weight: 700;
+	font-size: clamp(2rem, 1.6vw, 4rem);
+	font-weight: 800;
 }
 
 .nav ul {
 	display: flex;
 	list-style: none;
-	gap: 20px;
+	gap: 25%;
+	justify-content:space-around;
 }
 
 .nav a {
-	color: white;
+	color: rgb(240, 240, 240);
 	text-decoration: none;
 	font-size: clamp(2rem, 1.6vw, 4rem);
 	font-weight: 800;
@@ -65,16 +70,45 @@ body {
 }
 
 .nav a:hover {
-	background-color: #748ca7;
-	color: rgb(200, 200, 200);
+	cursor:pointer;
+	color:#ffffff;
+	transform:scale(1.01);
+}
+.switch{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	gap:5%;
+}
+.switch button{
+	background-color:#dcbfff;
+	border-radius:5px;
+	height:auto;
+	font-size: clamp(2rem, 1.6vw, 4rem);
+	font-weight: 800;
+	color:rgb(240, 240, 240);
+	border:none;
+	transition:color 0.2s ease,transform 0.2s ease;
+}
+
+.switch button:hover{
+	cursor:pointer;
+	color:#ffffff;
+	transform:scale(1.01);
+}
+
+.lightbulb{
+	height: 10%;
+	width:10%;
+	color:black;
 }
 
 /* 侧边栏样式 */
 .sidebar {
 	grid-area: sidebar;
-	background-color: rgb(249, 249, 249);
 	padding: 20px;
 	border-radius: 12px;
+		box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
 .sidebar-title {
@@ -135,6 +169,8 @@ body {
 	transform: translateY(-3px);
 	box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
+
+
 
 /* 主内容区域 */
 .main {
@@ -209,8 +245,8 @@ body {
 .projects-grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	gap: 30px;
-	margin-top: 30px;
+	gap: 5%;
+	margin-top: 5%;
 }
 
 .project-card {
@@ -219,10 +255,13 @@ body {
 	overflow: hidden;
 	transition: all 0.3s ease;
 	border: 1px solid #e9ecef;
+	box-shadow:	0 6px 15px rgba(0, 0, 0, 0.15);
+	display:flex;
+	flex-direction:column;
 }
 
 .project-title {
-	font-size: 1.3rem;
+	font-size: 2.5rem;
 	padding: 20px 20px 0;
 	color: #333;
 }
@@ -230,25 +269,27 @@ body {
 .project-figure {
 	margin: 20px;
 	text-align: center;
+	font-weight: 200;
+	height: 60%;
 }
 
 .project-image {
-	width: 100%;
-	height:100%;
-	object-fit:contain;
+	width: 80%;
+	height: 80%;
+	object-fit: contain;
 	border-radius: 8px;
 	transition: transform 0.5s ease;
 	box-shadow: 0 50px 30px rgba(0, 0, 0, 0.1);
 	transform: rotate3d(1, 1, 0, 30deg);
 	transition: transform 0.5s ease-in, box-shadow 0.5s ease-in;
+	transform-origin:center;
 }
 
 .project-image:hover {
-	transform: scale(1.03);
+	transform: scale(1.01);
 }
 
 .project-caption {
-	margin-top: 10px;
 	font-style: italic;
 	color: #666;
 }
@@ -256,6 +297,7 @@ body {
 .project-description {
 	padding: 0 20px 20px;
 	color: #555;
+	margin-top: 5%;
 }
 
 /* 教育经历 */
@@ -268,7 +310,7 @@ body {
 }
 
 .education-title {
-	font-size: 1.3rem;
+	font-size:2.5rem;
 	color: #333;
 }
 
@@ -283,7 +325,6 @@ body {
 	grid-area: footer;
 	text-align: center;
 	padding: 30px;
-	background-color: #f9f9f9;
 	color: #333;
 	border-radius: 12px;
 	margin-top: 20px;
@@ -297,31 +338,15 @@ body {
 .decorative-elements {
 	position: fixed;
 	pointer-events: none;
-	z-index: -1;
 }
 
 .cat-icon {
 	position: fixed;
-	bottom: 20px;
-	left: 20px;
+	bottom: 0px;
+	left: 0px;
 	width: 60px;
 	height: 60px;
 	animation: catMoveUpDown 5s ease-in-out infinite;
-}
-
-.move-cat-icon {
-	position: fixed;
-	top: 20%;
-	right: 5%;
-	width: 50px;
-	height: 50px;
-	opacity: 0.7;
-	transition: opacity 0.3s ease;
-}
-
-.move-cat-icon:hover {
-	opacity: 1;
-	animation: catMoveLeftRight 6s ease-in-out infinite;
 }
 
 /* 动画效果 */
@@ -331,21 +356,10 @@ body {
 		transform: translateY(0);
 	}
 	50% {
-		transform: translateY(-30px);
+		transform: translateY(30px);
 	}
 }
 
-@keyframes catMoveLeftRight {
-	0% {
-		transform: translateX(0);
-	}
-	50% {
-		transform: translateX(-50px);
-	}
-	100% {
-		transform: translateX(0);
-	}
-}
 
 /* 响应式设计 */
 @media (max-width: 768px) {
@@ -382,8 +396,7 @@ body {
 		grid-template-columns: 1fr;
 	}
 
-	.cat-icon,
-	.move-cat-icon {
+	.cat-icon {
 		width: 40px;
 		height: 40px;
 	}
