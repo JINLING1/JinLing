@@ -1,0 +1,20 @@
+{
+  "siteTitle": "JinLing",
+  "navProfile": "Profile",
+  "navProject": "Project",
+  "navEducation": "Education",
+  "profileTitle": "Profile",
+  "profileIntro": "I am JinLing, a frontend developer.",
+  "skillsTitle": "Skills",
+  "projectTitle": "Project",
+  "projectExpenseTracker": "Vue Expense Tracker",
+  "projectExpenseTrackerCaption": "A personal finance management application developed with Vue.js.",
+  "projectExpenseTrackerDesc": "This is a Vue 3-based bookkeeping application that allows users to record their income and expenses, view their bill details, and analyze their financial situation.",
+  "projectDebugDive":"DebugDiva",
+  "projectDebugDiveCaption":"An AI conversational assistant developed with Vue.js.",
+  "projectDebugDiveDesc":"A multimodal dialog component supporting text, image, and PDF inputs with streaming responses,integrated with the Coze API for large language model interactions.",
+  "eduTitle": "Education",
+  "eduMajor": "Intelligent Science and Technology",
+  "eduPeriod": "September 2023 – June 2027",
+  "eduDesc": "Focused on Web Frontend Development"
+}

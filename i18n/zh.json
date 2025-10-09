@@ -1,0 +1,19 @@
+{
+  "navProfile": "简介",
+  "navProject": "项目",
+  "navEducation": "教育",
+  "profileTitle": "简介",
+  "profileIntro": "我是JinLing，一名前端开发者。",
+  "skillsTitle": "技能",
+  "projectTitle": "项目",
+  "projectExpenseTracker": "Vue 记账应用",
+  "projectExpenseTrackerCaption": "一个基于 Vue.js 的个人财务管理应用。",
+  "projectExpenseTrackerDesc": "该应用允许用户记录收入与支出，分类查看账目统计。",
+  "projectDebugDive":"Vue AI对话项目",
+  "projectDebugDiveCaption":"一个基于 Vue.js 的 AI 对话项目。",
+  "projectDebugDiveDesc":"该项目利用 Vue.js 实现了一个智能对话前端界面，用户可以与 AI 进行自然语言交互。",
+  "eduTitle": "教育",
+  "eduMajor": "智能科学与技术",
+  "eduPeriod": "2023年9月 – 2027年6月",
+  "eduDesc": "专注于 Web 前端开发"
+}

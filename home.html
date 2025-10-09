@@ -21,16 +21,16 @@
     <h1>JinLing</h1>
     <nav class="nav">
       <ul>
-        <li><a href="#profile">Profile</a></li>
-        <li><a href="#project">Project</a></li>
-        <li><a href="#education">Education</a></li>
+        <li><a href="#profile" data-i18n="navProfile">Profile</a></li>
+        <li><a href="#project" data-i18n="navProject">Project</a></li>
+        <li><a href="#education" data-i18n="navEducation">Education</a></li>
       </ul>
     </nav>
 
     <div class="switch">
-      <button>中文</button>
-      <button>English</button>
-      <img class="lightbulb" src="./image/lightbulb-svgrepo-com.svg">
+      <button class="js-switch-zh">中文</button>
+      <button class="js-switch-en">English</button>
+      <img class="js-switch-theme lightbulb" src="./image/lightbulb-svgrepo-com.svg">
     </div>
 
   </header>
@@ -38,10 +38,10 @@
   <main class="main">
 
     <section id="profile" class="section">
-      <h2 class="section-title">Profile</h2>
-      <p>I am JinLing. a frontend developer</p>
+      <h2 class="section-title" data-i18n="profileTitle">Profile</h2>
+      <p data-i18n="profileIntro">I am JinLing. a frontend developer</p>
 
-      <h3 class="subsection-title">Skills</h3>
+      <h3 class="subsection-title" data-i18n="skillsTitle">Skills</h3>
       <ul class="skills-container">
         <li class="skill-tag" data-skill="HTML5"><img class="skill-icon" src="./image/HTML5.svg" alt="HTML5">HTML5</li>
         <li class="skill-tag" data-skill="CSS3"><img class="skill-icon" src="./image/CSS3.svg" alt="CSS3">CSS3</li>
@@ -54,35 +54,33 @@
     </section>
 
     <section id="project" class="section">
-      <h2 class="section-title">Project</h2>
+      <h2 class="section-title" data-i18n="projectTitle">Project</h2>
       <div class="projects-grid">
         <div class="project-card">
-          <h3 class="project-title">Vue Expense Tracker</h3>
+          <h3 class="project-title" data-i18n="projectExpenseTracker">Vue Expense Tracker</h3>
           <figure class="project-figure">
             <a href="https://github.com/JINLING1/vue-expense-tracker">
               <img class="project-image" src="./image/Vue_ExpenseTracker.png" alt="Vue记账应用"></a>
-            <figcaption class="project-caption">A personal finance management application developed with Vue.js.
+            <figcaption class="project-caption" data-i18n="projectExpenseTrackerCaption">A personal finance management application developed with Vue.js.
             </figcaption>
           </figure>
           <div class="project-description">
-            <p>
-              This is a Vue 3-based bookkeeping application that allows users to record their income and expenses, view
-              their bill details, and analyze their financial situation.
+            <p data-i18n="projectExpenseTrackerDesc">
+              This is a Vue 3-based bookkeeping application that allows users to record their income and expenses, view their bill details, and analyze their financial situation.
             </p>
           </div>
         </div>
 
         <div class="project-card">
-          <h3 class="project-title">DebugDive</h3>
+          <h3 class="project-title" data-i18n="projectDebugDive">DebugDiva</h3>
           <figure class="project-figure">
             <a href="https://github.com/JINLING1/DebugDiva">
               <img class="project-image" src="./image/DebugDiva.png" alt="Project2 Image"></a>
-            <figcaption class="project-caption">An AI conversational assistant developed with Vue.js.</figcaption>
+            <figcaption class="project-caption" data-i18n="projectDebugDiveCaption">An AI conversational assistant developed with Vue.js.</figcaption>
           </figure>
           <div class="project-description">
-            <p>
-              A multimodal dialog component supporting text, image, and PDF inputs with streaming responses,
-              integrated with the Coze API for large language model interactions.
+            <p data-i18n="projectDebugDiveDesc">
+              A multimodal dialog component supporting text, image, and PDF inputs with streaming responses integrated with the Coze API for large language model interactions.
             </p>
           </div>
         </div>
@@ -90,11 +88,11 @@
     </section>
 
     <section id="education" class="section">
-      <h2 class="section-title">Education</h2>
+      <h2 class="section-title" data-i18n="eduTitle">Education</h2>
       <div class="education-item">
-        <h3 class="education-title">Intelligent Science and Technology</h3>
-        <p class="education-period">September 2023 – June 2027</p>
-        <p>Focused on Web Front-End Development</p>
+        <h3 class="education-title" data-i18n="eduMajor">Intelligent Science and Technology</h3>
+        <p class="education-period" data-i18n="educationPeriod">September 2023 – June 2027</p>
+        <p data-i18n="eduDesc">Focused on Web Front-End Development</p>
       </div>
     </section>
   </main>
@@ -109,6 +107,7 @@
   <div class="decorative-elements">
     <img class="cat-icon" src="./image/cat.svg" alt="cat-icon">
   </div>
+  <script src="./js/i18n.js"></script>
 </body>
 
 </html>

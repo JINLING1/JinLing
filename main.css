@@ -144,7 +144,7 @@ body {
 	left: 0;
 	width: 80px;
 	height: 4px;
-	background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+	background: linear-gradient(90deg, #7A7A7A 0%, #9A9A9A 100%);
 	border-radius: 2px;
 }
 
@@ -245,7 +245,7 @@ body {
 	padding: 20px;
 	background-color: #f8f9fa;
 	border-radius: 8px;
-	border-left: 4px solid #667eea;
+	border-left: 4px solid #7A7A7A;
 }
 
 .education-title {
@@ -254,7 +254,7 @@ body {
 }
 
 .education-period {
-	color: #667eea;
+	color: #4A6FA5;
 	font-weight: 600;
 	margin: 5px 0 10px;
 }
