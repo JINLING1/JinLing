@@ -19,8 +19,13 @@ const i18n = {
 updateTexts(){
   document.querySelectorAll('[data-i18n]').forEach(el=>{
     const key = el.getAttribute('data-i18n');
-    if(this.translations[key]){
-      el.textContent = this.translations[key];
+    if(this.translations[key]){    
+      el.style.opacity = 0;
+      console.log(el.style.opacity);
+      setTimeout(()=>{
+        el.textContent = this.translations[key];
+        el.style.opacity = 1;
+      },100);
     }
   });
 },
