@@ -6,24 +6,24 @@
 }
 
 body {
-	background-color:#F5F7FA;
+	background-color: #f5f7fa;
 	font-family: 'Montserrat', sans-serif;
 	font-optical-sizing: auto;
 	font-style: normal;
 	font-size: clamp(20px, 1.6vw, 35px);
 	line-height: 1.6;
-	color:#1D1D1F;
+	color: #1d1d1f;
 	overflow-x: hidden;
 }
 
 /* 页面布局 */
 .page-container {
 	display: grid;
-	grid-template-columns:1fr;
+	grid-template-columns: 1fr;
 	grid-template-rows: auto 1fr auto;
 	grid-template-areas:
 		'header'
-		 'main'
+		'main'
 		'footer';
 	min-height: 100vh;
 	gap: 20px;
@@ -41,9 +41,9 @@ body {
 	color: #515154;
 	border-radius: 12px;
 	box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
-	position:sticky;
-	top:20px;
-	z-index:1;
+	position: sticky;
+	top: 20px;
+	z-index: 1;
 }
 
 .header h1 {
@@ -51,14 +51,14 @@ body {
 	font-weight: 800;
 }
 
-.nav{
-	flex:1;
-	display:flex;
-	justify-content:center;
+.nav {
+	flex: 1;
+	display: flex;
+	justify-content: center;
 }
 
 .nav ul {
-	flex:1;
+	flex: 1;
 	display: flex;
 	justify-content: space-evenly;
 	list-style: none;
@@ -70,52 +70,49 @@ body {
 	font-size: clamp(2rem, 1.6vw, 4rem);
 	font-weight: 800;
 	transition: all 0.3s ease;
-	display:block;
-	white-space:nowrap;
+	display: block;
+	white-space: nowrap;
 }
 
 .nav a:hover {
-	cursor:pointer;
-	color:#e3e0e0;
-	transform:scale(1.01);
+	cursor: pointer;
+	color: #e3e0e0;
+	transform: scale(1.01);
 }
 
-.switch{
-	display:flex;
-	justify-content:flex-end;
+.switch {
+	display: flex;
+	justify-content: flex-end;
 	align-items: center;
-	gap:1rem;
+	gap: 1rem;
 	white-space: nowrap;
 	/* 使switch容器不占用多余空间 */
-	max-width:fit-content;
+	max-width: fit-content;
 }
 
-.switch button{
-	border-radius:5px;
-	height:auto;
+.switch button {
+	border-radius: 5px;
+	height: auto;
 	font-size: clamp(2rem, 1.6vw, 4rem);
 	font-weight: 800;
-	color:#515154;
-	border:none;
-	transition:color 0.2s ease,transform 0.2s ease;
+	color: #515154;
+	border: none;
+	transition: color 0.2s ease, transform 0.2s ease;
 }
 
-.switch button:hover{
-	cursor:pointer;
-	color:#ffffff;
-	transform:scale(1.03);
+.switch button:hover {
+	cursor: pointer;
+	color: #ffffff;
+	transform: scale(1.03);
 }
 
-.lightbulb{
-	width:3rem;
+.lightbulb {
+	width: 3rem;
 }
 
-.lightbulb:hover{
-	cursor:pointer;
+.lightbulb:hover {
+	cursor: pointer;
 }
-
-
-
 
 /* 主内容区域 */
 .main {
@@ -150,7 +147,7 @@ body {
 	left: 0;
 	width: 80px;
 	height: 4px;
-	background: linear-gradient(90deg, #7A7A7A 0%, #9A9A9A 100%);
+	background: linear-gradient(90deg, #7a7a7a 0%, #9a9a9a 100%);
 	border-radius: 2px;
 }
 
@@ -168,14 +165,14 @@ body {
 	margin-top: 20px;
 }
 
-.skill-icon{
-	width:1.5rem;
-	height:1.5rem;
+.skill-icon {
+	width: 1.5rem;
+	height: 1.5rem;
 }
 
 .skill-tag {
 	padding: 8px 16px;
-	padding-left:24px;
+	padding-left: 24px;
 	font-weight: 500;
 	font-size: 1.5rem;
 	transition: all 0.3s ease;
@@ -200,9 +197,9 @@ body {
 	overflow: hidden;
 	transition: all 0.3s ease;
 	border: 1px solid #e9ecef;
-	box-shadow:	0 6px 15px rgba(0, 0, 0, 0.15);
-	display:flex;
-	flex-direction:column;
+	box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+	display: flex;
+	flex-direction: column;
 }
 
 .project-title {
@@ -227,7 +224,7 @@ body {
 	box-shadow: 0 50px 30px rgba(0, 0, 0, 0.1);
 	transform: rotate3d(1, 1, 0, 30deg);
 	transition: transform 0.5s ease-in, box-shadow 0.5s ease-in;
-	transform-origin:center;
+	transform-origin: center;
 }
 
 .project-image:hover {
@@ -251,16 +248,16 @@ body {
 	padding: 20px;
 	background-color: #f8f9fa;
 	border-radius: 8px;
-	border-left: 4px solid #7A7A7A;
+	border-left: 4px solid #7a7a7a;
 }
 
 .education-title {
-	font-size:2.5rem;
+	font-size: 2.5rem;
 	color: #515154;
 }
 
 .education-period {
-	color: #4A6FA5;
+	color: #4a6fa5;
 	font-weight: 600;
 	margin: 5px 0 10px;
 }
@@ -291,9 +288,9 @@ body {
 	overflow: hidden;
 }
 
-.contact-icon{
-	width:2rem;
-	height:2rem;
+.contact-icon {
+	width: 2rem;
+	height: 2rem;
 }
 
 .contact-link:hover {
@@ -325,7 +322,6 @@ body {
 		transform: translateY(14px);
 	}
 }
-
 
 /* 响应式设计 */
 @media (max-width: 768px) {
@@ -383,5 +379,5 @@ body {
 
 /* 语言切换平滑 */
 [data-i18n] {
-  transition: opacity 0.3s ease;
+	transition: opacity 0.3s ease;
 }
