@@ -34,9 +34,7 @@ body {
 .header {
 	grid-area: header;
 	display: flex;
-	justify-content: flex-start;
 	align-items: center;
-	gap:1rem;
 	margin: 0px;
 	padding: 20px;
 	background-color: #e8ebed83;
@@ -53,11 +51,17 @@ body {
 	font-weight: 800;
 }
 
+.nav{
+	flex:1;
+	display:flex;
+	justify-content:center;
+}
+
 .nav ul {
+	flex:1;
 	display: flex;
+	justify-content: space-evenly;
 	list-style: none;
-	gap: 5rem;
-	justify-content:space-around;
 }
 
 .nav a {
@@ -65,10 +69,8 @@ body {
 	text-decoration: none;
 	font-size: clamp(2rem, 1.6vw, 4rem);
 	font-weight: 800;
-	padding: 8px 15px;
-	border-radius: 25px;
 	transition: all 0.3s ease;
-	min-width:fit-content;
+	display:block;
 	white-space:nowrap;
 }
 
@@ -80,9 +82,12 @@ body {
 
 .switch{
 	display:flex;
-	justify-content: center;
+	justify-content:flex-end;
 	align-items: center;
-	gap:5%;
+	gap:1rem;
+	white-space: nowrap;
+	/* 使switch容器不占用多余空间 */
+	max-width:fit-content;
 }
 
 .switch button{
@@ -102,8 +107,7 @@ body {
 }
 
 .lightbulb{
-	height: 10%;
-	width:10%;
+	width:3rem;
 }
 
 .lightbulb:hover{
