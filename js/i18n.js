@@ -20,7 +20,6 @@ const i18n = {
 			const key = el.getAttribute('data-i18n');
 			if (this.translations[key]) {
 				el.style.opacity = 0;
-				console.log(el.style.opacity);
 				setTimeout(() => {
 					el.textContent = this.translations[key];
 					el.style.opacity = 1;
