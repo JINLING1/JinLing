@@ -1,10 +1,12 @@
+const isGithub = window.location.hostname.includes('github.io');
+const basePath = isGithub ? '/JinLing' : '';
 const i18n = {
 	currentLang: 'en',
 	translations: {},
 
 	async loadLanguage(newLang) {
 		try {
-			const response = await fetch(`../i18n/${newLang}.json`);
+			const response = await fetch(`${basePath}/i18n/${newLang}.json`);
 			const data = await response.json();
 			this.translations = data;
 			this.currentLang = newLang;
