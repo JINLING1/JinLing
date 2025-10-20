@@ -292,6 +292,7 @@ body {
 .contact-icon {
 	width: 2rem;
 	height: 2rem;
+	transition: filter 0.3s ease;
 }
 
 .contact-link:hover {
@@ -465,15 +466,18 @@ body.dark-mode .footer {
 	color: #b0b0b0;
 }
 
+body.dark-mode .contact-icon {
+	filter: invert(1) brightness(1);
+}
+
 body.dark-mode::-webkit-scrollbar-track {
-  background: #1a1a1a;  /* 深灰轨道 */
+	background: #1a1a1a; /* 深灰轨道 */
 }
 
 body.dark-mode::-webkit-scrollbar-thumb {
-  background: #3a3a3a;  /* 滑块略亮 */
+	background: #3a3a3a; /* 滑块略亮 */
 }
 
 body.dark-mode::-webkit-scrollbar-thumb:hover {
-  background: #555;
+	background: #555;
 }
-
